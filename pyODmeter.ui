@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1089</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>77</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe Devanagari</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>OD METER Ying ver.1.0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bg">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>130</y>
+      <width>161</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Take Background</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="data">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>130</y>
+      <width>161</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Take Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="single">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>130</y>
+      <width>161</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Single Frame</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Save">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>130</y>
+      <width>161</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Data</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>260</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Two-level</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EIT</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="ODlabel">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>300</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OD</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gamma12label">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>390</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gamma12</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="OD">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>320</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe Devanagari</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>200</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gamma12">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>410</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe Devanagari</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>0.0001</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Paras">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>479</y>
+      <width>513</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Initial fitting parameters &amp; Real-time fitting parameters</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Paraname">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>500</y>
+      <width>641</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offset    Amplitude  OD        Delta_p   gamma12    Omega_c   Delta_c</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>550</y>
+      <width>641</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="Offset_2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Amplitude_2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="OD_2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Delta_p_2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="gamma12_2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Omega_c_2"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Delta_c_2"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="fileDirectory">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>610</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fileDirectory_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>585</y>
+      <width>651</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Auto-index File Directory                         Name/Prefix From</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="enableFitting">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>220</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enable Fitting</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>520</y>
+      <width>641</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="Offset"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Amplitude"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="OD_3"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Delta_p"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="gamma_12"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Omega_c"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Delta_c"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>220</y>
+      <width>471</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="graph_layout"/>
+   </widget>
+   <widget class="QPushButton" name="STOP">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>165</y>
+      <width>161</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>STOP</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fileName">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>610</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="autoIndex">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>612</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fileIndex">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>610</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="saveStatus">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>650</y>
+      <width>641</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearBg">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>165</y>
+      <width>161</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear Background</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1089</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menupy">
+    <property name="title">
+     <string>OD</string>
+    </property>
+   </widget>
+   <addaction name="menupy"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
