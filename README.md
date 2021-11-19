@@ -5,7 +5,7 @@ How to use the program?
 
 1. Make sure that the python environment is already set. 
 3. Install PyQt5 and pyvisa through cmd pip installation. Some package version are listed as follow:
-    PyQt5                              5.15.6 //
+    PyQt5                              5.15.6 
     PyQt5-Qt5                          5.15.2 //
     PyQt5-sip                          12.9.0 //
     pyqtgraph                          0.12.3 //
