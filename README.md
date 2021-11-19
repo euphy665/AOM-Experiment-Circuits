@@ -16,7 +16,7 @@ How to use the program?
 
 Click on the main.py file and run.
 
-Oscillascope type: Rigol. DS2202A, if other oscillascope is used, the osc file need to be changed corrordingly. 
+Oscillascope type: Rigol. DS2202A, if other oscillascope is used, the osc file need to be changed. 
 
 When measuring:
 
